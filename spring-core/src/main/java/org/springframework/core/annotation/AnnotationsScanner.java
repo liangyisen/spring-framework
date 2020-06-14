@@ -567,7 +567,7 @@ abstract class AnnotationsScanner {
 		}
 		if (source instanceof Class) {
 			Class<?> sourceClass = (Class<?>) source;
-			boolean noSuperTypes = (sourceClass.getSuperclass() == Object.class &&
+				boolean noSuperTypes = (sourceClass.getSuperclass() == Object.class &&
 					sourceClass.getInterfaces().length == 0);
 			return (searchStrategy == SearchStrategy.TYPE_HIERARCHY_AND_ENCLOSING_CLASSES ? noSuperTypes &&
 					sourceClass.getEnclosingClass() == null : noSuperTypes);

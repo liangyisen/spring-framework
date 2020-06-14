@@ -27,6 +27,11 @@ import java.nio.channels.ReadableByteChannel;
 import org.springframework.lang.Nullable;
 
 /**
+ * Resouce 其实是一个接口，代表的是资源，在计算机里面从一个地方移动到另外一个地方所需要的东西就是数据流，
+ * 所以 Resource 实现了 InputStreamSource 接口，
+ * 通过 InputStreamSource 接口可以获取到 Inputstream，这样就可以读取不同的 Bean 定义了。
+ *
+ *
  * Interface for a resource descriptor that abstracts from the actual
  * type of underlying resource, such as a file or class path resource.
  *

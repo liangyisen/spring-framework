@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.3.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(project(":spring-context"))
+//    compile(project(":spring-test"))
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.70'
+    compile group: 'junit', name: 'junit', version: '4.8'
+}

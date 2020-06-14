@@ -280,7 +280,8 @@ configure(allprojects) { project ->
 		}
 		repositories {
 			mavenCentral()
-			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+            maven { url "http://maven.aliyun.com/nexus/content/groups/public/"}
+            maven { url "https://repo.spring.io/libs-spring-framework-build" }
 			maven { url "https://repo.spring.io/snapshot" } // Reactor
 			maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" } // RSocket
 		}
@@ -412,4 +413,11 @@ configure(rootProject) {
 			}
 		}
 	}
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.12'
 }
