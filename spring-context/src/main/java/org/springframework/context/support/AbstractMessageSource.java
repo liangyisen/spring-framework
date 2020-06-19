@@ -150,10 +150,12 @@ public abstract class AbstractMessageSource extends MessageSourceSupport impleme
 
 	@Override
 	public final String getMessage(String code, @Nullable Object[] args, Locale locale) throws NoSuchMessageException {
+		//到messageSource内查找
 		String msg = getMessageInternal(code, args, locale);
 		if (msg != null) {
 			return msg;
 		}
+		//查找默认的Message
 		String fallback = getDefaultMessage(code);
 		if (fallback != null) {
 			return fallback;

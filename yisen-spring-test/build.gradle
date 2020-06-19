@@ -15,5 +15,6 @@ dependencies {
     compile(project(":spring-context"))
 //    compile(project(":spring-test"))
     compile group: 'com.alibaba', name: 'fastjson', version: '1.2.70'
-    compile group: 'junit', name: 'junit', version: '4.8'
-}
+    compile group: 'junit', name: 'junit', version: '4.13'
+    compile group: "org.hamcrest", name: "hamcrest-core",version:'2.1'
+ }
